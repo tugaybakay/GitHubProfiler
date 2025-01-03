@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>GitHub Profile Fetcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300;400;500;700&family=Rubik+Vinyl&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <h1 class="header">GitHub Profiler</h1>
+      <form action="">
+        <input id="profile-name-input" placeholder="Type profile name!" type="text"/>
+        <button id="search-button" type="submit">Search</button>
+      </form>
+      </div>
+
+      <div class="profile-container">
+        <img id="profile-image" src="./pp.svg" alt="github profile name"/>
+        <div class="profile-stats">
+          <div class="profile-names">
+            <h2 id="profile-name"></h2>
+            <p id="name"></p>
+          </div>
+          <div class="user-stats">
+            <p id="location"></p>
+            <p id="member-since"></p>
+            <p id="repo-count"></p>
+            <p id="follower-count"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="repos-container">
+        <h2 class="repos-header">Repos</h2>
+        <ul id="repo-list"></ul>
+      </div>
+
+      <p id="madeby">Made by <a id="madeby-link" href="https://github.com/tugaybakay" target="_blank">Tugaybakay</a></p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
